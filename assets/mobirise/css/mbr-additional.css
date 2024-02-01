@@ -811,7 +811,7 @@ a {
 }
 @media (min-width: 992px) {
   .cid-sFF0ciwnEL .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
-    max-height: calc(98.5vh - 7.2rem);
+    max-height: calc(98.5vh - 4.9rem);
   }
 }
 .cid-sFF0ciwnEL .navbar.collapsed .dropdown-menu .dropdown-submenu {
@@ -1058,23 +1058,9 @@ a {
   color: #8e8d8a;
   text-align: left;
 }
-.cid-u1FPSfckyW {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  background-color: #353535;
-}
-.cid-u1FPSfckyW .line {
-  background-color: #fff0b0;
-  align: center;
-  height: 2px;
-  margin: 0 auto;
-}
-.cid-u1FPSfckyW .mbr-text {
-  color: #fff0b0;
-}
 .cid-sFF3eJNZDT {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
 }
 .cid-sFF3eJNZDT .item {
@@ -1112,6 +1098,57 @@ a {
 .cid-sFF3eJNZDT .icon-text {
   color: #8e8d8a;
 }
+.cid-u1JYRb44Xg {
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+  background-color: #353535;
+}
+.cid-u1JYRb44Xg img,
+.cid-u1JYRb44Xg .item-img {
+  width: 100%;
+}
+.cid-u1JYRb44Xg .item:focus,
+.cid-u1JYRb44Xg span:focus {
+  outline: none;
+}
+.cid-u1JYRb44Xg .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-u1JYRb44Xg .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #fafafa;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-u1JYRb44Xg .item-wrapper .item-content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-u1JYRb44Xg .item-wrapper .item-content {
+    padding: 1rem;
+  }
+}
+.cid-u1JYRb44Xg .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-u1JYRb44Xg .mbr-section-title {
+  color: #e43f3f;
+}
+.cid-u1JYRb44Xg .mbr-text,
+.cid-u1JYRb44Xg .mbr-section-btn {
+  text-align: left;
+}
+.cid-u1JYRb44Xg .item-title {
+  text-align: center;
+}
+.cid-u1JYRb44Xg .item-subtitle {
+  text-align: left;
+}
 .cid-u1JV0WuXAo {
   padding-top: 0rem;
   padding-bottom: 0rem;
@@ -1140,32 +1177,76 @@ a {
 .cid-u1JV0WuXAo img {
   width: 100%;
 }
-.cid-sFF75ZhH2d {
+.cid-u2ZrML1Dkl {
   padding-top: 0rem;
   padding-bottom: 0rem;
   background-color: #ffffff;
 }
-.cid-sFF75ZhH2d .text-wrapper {
-  padding: 1rem;
+.cid-u2ZrML1Dkl .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u2ZrML1Dkl .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
 }
 @media (max-width: 991px) {
-  .cid-sFF75ZhH2d .image-wrapper {
+  .cid-u2ZrML1Dkl .image-wrapper {
     margin-bottom: 1rem;
   }
 }
-.cid-sFF75ZhH2d img {
+.cid-u2ZrML1Dkl .row {
+  flex-direction: row-reverse;
+}
+.cid-u2ZrML1Dkl img {
   width: 100%;
 }
 @media (min-width: 992px) {
-  .cid-sFF75ZhH2d .text-wrapper {
+  .cid-u2ZrML1Dkl .text-wrapper {
     padding: 2rem;
   }
 }
-.cid-sFF75ZhH2d .mbr-section-title {
+.cid-u2ZrML1Dkl .mbr-section-title {
   color: #e43f3f;
 }
-.cid-sFF75ZhH2d .mbr-text {
-  color: #8e8d8a;
+.cid-u2ZemX1Ke7 {
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+  background-color: #eeeeee;
+}
+.cid-u2ZemX1Ke7 .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u2ZemX1Ke7 .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-u2ZemX1Ke7 ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 2.5rem;
+}
+.cid-u2ZemX1Ke7 li {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.cid-u2ZemX1Ke7 ul li::before {
+  position: absolute;
+  left: -1.6rem;
+  content: "\2022";
+  color: #e68181;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 1.6rem;
 }
 .cid-u1QfffkJXR {
   padding-top: 1rem;
@@ -1278,85 +1359,6 @@ a {
 .cid-u1QHXGWWiF .mbr-description {
   color: #ff6666;
 }
-.cid-u1QTJ1WKdM {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  background-image: url("../../../assets/images/firefly-brain-made-of-trees-and-flowers-flow-computational-41727-2000x1143.jpg");
-}
-.cid-u1QTJ1WKdM .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-u1QTJ1WKdM .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-@media (max-width: 991px) {
-  .cid-u1QTJ1WKdM .image-wrapper {
-    margin-bottom: 1rem;
-  }
-}
-.cid-u1QTJ1WKdM .row {
-  flex-direction: row-reverse;
-}
-.cid-u1QTJ1WKdM img {
-  width: 100%;
-}
-.cid-u1JYRb44Xg {
-  padding-top: 2rem;
-  padding-bottom: 0rem;
-  background-color: #353535;
-}
-.cid-u1JYRb44Xg img,
-.cid-u1JYRb44Xg .item-img {
-  width: 100%;
-}
-.cid-u1JYRb44Xg .item:focus,
-.cid-u1JYRb44Xg span:focus {
-  outline: none;
-}
-.cid-u1JYRb44Xg .item {
-  cursor: pointer;
-  margin-bottom: 2rem;
-}
-.cid-u1JYRb44Xg .item-wrapper {
-  position: relative;
-  border-radius: 4px;
-  background: #fafafa;
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-}
-@media (min-width: 992px) {
-  .cid-u1JYRb44Xg .item-wrapper .item-content {
-    padding: 2rem;
-  }
-}
-@media (max-width: 991px) {
-  .cid-u1JYRb44Xg .item-wrapper .item-content {
-    padding: 1rem;
-  }
-}
-.cid-u1JYRb44Xg .mbr-section-btn {
-  margin-top: auto !important;
-}
-.cid-u1JYRb44Xg .mbr-section-title {
-  color: #e43f3f;
-}
-.cid-u1JYRb44Xg .mbr-text,
-.cid-u1JYRb44Xg .mbr-section-btn {
-  text-align: left;
-}
-.cid-u1JYRb44Xg .item-title {
-  text-align: center;
-}
-.cid-u1JYRb44Xg .item-subtitle {
-  text-align: left;
-}
 .cid-u1QU8q4mdO {
   padding-top: 0rem;
   padding-bottom: 0rem;
@@ -1385,15 +1387,15 @@ a {
 .cid-u1QU8q4mdO img {
   width: 100%;
 }
-.cid-u1K0OInHJT {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.cid-u2Zt5slCzj {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   background-color: #fafafa;
 }
-.cid-u1K0OInHJT .mbr-fallback-image.disabled {
+.cid-u2Zt5slCzj .mbr-fallback-image.disabled {
   display: none;
 }
-.cid-u1K0OInHJT .mbr-fallback-image {
+.cid-u2Zt5slCzj .mbr-fallback-image {
   display: block;
   background-size: cover;
   background-position: center center;
@@ -1402,24 +1404,29 @@ a {
   position: absolute;
   top: 0;
 }
-.cid-u1K0OInHJT .text-wrapper {
-  padding: 1rem;
-}
 @media (max-width: 991px) {
-  .cid-u1K0OInHJT .image-wrapper {
+  .cid-u2Zt5slCzj .image-wrapper {
     margin-bottom: 1rem;
   }
 }
-.cid-u1K0OInHJT img {
+.cid-u2Zt5slCzj .row {
+  flex-direction: row-reverse;
+}
+.cid-u2Zt5slCzj img {
   width: 100%;
 }
 @media (min-width: 992px) {
-  .cid-u1K0OInHJT .text-wrapper {
+  .cid-u2Zt5slCzj .text-wrapper {
     padding: 2rem;
   }
 }
-.cid-u1K0OInHJT .mbr-section-title {
+.cid-u2Zt5slCzj .mbr-section-title {
   color: #e43f3f;
+}
+.cid-u2ZsLSDOvO {
+  padding-top: 0rem;
+  padding-bottom: 2rem;
+  background-color: #fafafa;
 }
 .cid-u20Pb54RbT {
   padding-top: 0rem;
@@ -1515,15 +1522,15 @@ a {
 .cid-u2ixwYFCPs img {
   width: 100%;
 }
-.cid-u2ixYkRMm9 {
+.cid-u2Zl482VqD {
   padding-top: 0rem;
   padding-bottom: 0rem;
   background-color: #eeeeee;
 }
-.cid-u2ixYkRMm9 .mbr-fallback-image.disabled {
+.cid-u2Zl482VqD .mbr-fallback-image.disabled {
   display: none;
 }
-.cid-u2ixYkRMm9 .mbr-fallback-image {
+.cid-u2Zl482VqD .mbr-fallback-image {
   display: block;
   background-size: cover;
   background-position: center center;
@@ -1532,24 +1539,64 @@ a {
   position: absolute;
   top: 0;
 }
-.cid-u2ixYkRMm9 .text-wrapper {
-  padding: 1rem;
-}
 @media (max-width: 991px) {
-  .cid-u2ixYkRMm9 .image-wrapper {
+  .cid-u2Zl482VqD .image-wrapper {
     margin-bottom: 1rem;
   }
 }
-.cid-u2ixYkRMm9 img {
+.cid-u2Zl482VqD .row {
+  flex-direction: row-reverse;
+}
+.cid-u2Zl482VqD img {
   width: 100%;
 }
 @media (min-width: 992px) {
-  .cid-u2ixYkRMm9 .text-wrapper {
+  .cid-u2Zl482VqD .text-wrapper {
     padding: 2rem;
   }
 }
-.cid-u2ixYkRMm9 .mbr-section-title {
+.cid-u2Zl482VqD .mbr-section-title {
   color: #e43f3f;
+}
+.cid-u2ZlI0PDqW {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: #eeeeee;
+}
+.cid-u2ZghSt4cL {
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+  background-color: #eeeeee;
+}
+.cid-u2ZghSt4cL .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u2ZghSt4cL .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-u2ZghSt4cL ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 2.5rem;
+}
+.cid-u2ZghSt4cL li {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.cid-u2ZghSt4cL ul li::before {
+  position: absolute;
+  left: -1.6rem;
+  content: "\2022";
+  color: #bbbbbb;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 1.6rem;
 }
 .cid-u1QTbiLZ5T {
   padding-top: 0rem;
@@ -1616,7 +1663,199 @@ a {
   color: #e43f3f;
 }
 .cid-u2ehgDuGUt .mbr-text {
-  color: #bbbbbb;
+  color: #ffffff;
+}
+.cid-u2ZhOiEs2C {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: #323f45;
+}
+.cid-u2ZhOiEs2C .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u2ZhOiEs2C .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-u2ZhOiEs2C ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 2.5rem;
+}
+.cid-u2ZhOiEs2C li {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.cid-u2ZhOiEs2C ul li::before {
+  position: absolute;
+  left: -1.6rem;
+  content: "\2022";
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 1.6rem;
+}
+.cid-u2ZhOiEs2C .list {
+  color: #fafafa;
+}
+.cid-u2ZhOiEs2C H3 {
+  color: #fafafa;
+}
+.cid-u2ZokniUNV {
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+  background-color: #323f45;
+}
+.cid-u2ZokniUNV .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u2ZokniUNV .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-u2ZokniUNV ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 2.5rem;
+}
+.cid-u2ZokniUNV li {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.cid-u2ZokniUNV ul li::before {
+  position: absolute;
+  left: -1.6rem;
+  content: "\2022";
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 1.6rem;
+}
+.cid-u2ZokniUNV .list {
+  color: #ffffff;
+}
+.cid-u2ZokniUNV H3 {
+  color: #ffffff;
+}
+.cid-u2Zps4saws {
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+  background-color: #323f45;
+}
+.cid-u2Zps4saws .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u2Zps4saws .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-u2Zps4saws ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 2.5rem;
+}
+.cid-u2Zps4saws li {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.cid-u2Zps4saws ul li::before {
+  position: absolute;
+  left: -1.6rem;
+  content: "\2022";
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 1.6rem;
+}
+.cid-u2Zps4saws .list {
+  color: #ffffff;
+}
+.cid-u2Zps4saws H3 {
+  color: #ffffff;
+}
+.cid-u2Zq9AQTdy {
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+  background-color: #323f45;
+}
+.cid-u2Zq9AQTdy .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u2Zq9AQTdy .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-u2Zq9AQTdy ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 2.5rem;
+}
+.cid-u2Zq9AQTdy li {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.cid-u2Zq9AQTdy ul li::before {
+  position: absolute;
+  left: -1.6rem;
+  content: "\2022";
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 1.6rem;
+}
+.cid-u2Zq9AQTdy .list {
+  color: #ffffff;
+}
+.cid-u2Zq9AQTdy H3 {
+  color: #ffffff;
+}
+.cid-u1QTJ1WKdM {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-image: url("../../../assets/images/firefly-brain-made-of-trees-and-flowers-flow-computational-41727-2000x1143.jpg");
+}
+.cid-u1QTJ1WKdM .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u1QTJ1WKdM .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 991px) {
+  .cid-u1QTJ1WKdM .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-u1QTJ1WKdM .row {
+  flex-direction: row-reverse;
+}
+.cid-u1QTJ1WKdM img {
+  width: 100%;
 }
 .cid-u2iB937RKc {
   padding-top: 1rem;
