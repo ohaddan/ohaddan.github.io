@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomb Game</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: linear-gradient(to bottom, #87CEEB, #f4f4f4);
+            position: relative;
+            font-family: Arial, sans-serif;
+        }
+        #gameCanvas {
+            display: block;
+            background: url('empty_street.png') no-repeat bottom center;
+            background-size: cover;
+        }
+        .bomb {
+            position: absolute;
+            border-radius: 50%;
+            color: white;
+            text-align: center;
+            font-size: 1em;
+            line-height: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        .small {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+        }
+        .medium {
+            width: 50px;
+            height: 50px;
+            background-color: orange;
+        }
+        .large {
+            width: 70px;
+            height: 70px;
+            background-color: black;
+        }
+        #score {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: black;
+        }
+        @keyframes explode {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(3);
+                opacity: 0;
+            }
+        }
+        .explosion {
+            position: absolute;
+            border-radius: 50%;
+            background-color: yellow;
+            width: 30px;
+            height: 30px;
+            animation: explode 0.5s forwards;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="score">Score: 100</div>
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const bombSizes = ['small', 'medium', 'large'];
+        const bombDamage = { small: 3, medium: 7, large: 9 };
+        let score = 100;
+        let bombs = [];
+        let bombCount = 0;
+        const totalBombs = 100;
+
+        function updateScore() {
+            document.getElementById('score').innerText = `Score: ${score}`;
+        }
+
+        function createBomb() {
+            if (bombCount >= totalBombs) return;
+            const size = bombSizes[Math.floor(Math.random() * bombSizes.length)];
+            const clicksRequired = Math.floor(Math.random() * 16) + 5;
+            const x = Math.random() * (canvas.width - 70);
+            const bomb = document.createElement('div');
+            bomb.className = `bomb ${size}`;
+            bomb.style.left = `${x}px`;
+            bomb.style.top = `-70px`;
+            bomb.innerHTML = clicksRequired;
+            bomb.dataset.clicks = clicksRequired;
+            bomb.dataset.size = size;
+            bomb.dataset.y = -70;
+            bomb.dataset.speed = (Math.random() * 0.5) + 0.5;
+            bomb.onclick = () => {
+                bomb.dataset.clicks--;
+                bomb.innerHTML = bomb.dataset.clicks;
+                if (bomb.dataset.clicks <= 0) {
+                    bomb.remove();
+                    bombs = bombs.filter(b => b !== bomb);
+                }
+            };
+            document.body.appendChild(bomb);
+            bombs.push(bomb);
+            bombCount++;
+            if (bombCount < totalBombs) {
+                setTimeout(createBomb, 500);
+            }
+        }
+
+        function createExplosion(x, y, size) {
+            const explosion = document.createElement('div');
+            explosion.className = 'explosion';
+            explosion.style.left = `${x}px`;
+            explosion.style.top = `${y}px`;
+            explosion.style.width = `${size}px`;
+            explosion.style.height = `${size}px`;
+            document.body.appendChild(explosion);
+            setTimeout(() => explosion.remove(), 500);
+        }
+
+        function updateBombs() {
+            bombs.forEach(bomb => {
+                let y = parseFloat(bomb.dataset.y);
+                y += parseFloat(bomb.dataset.speed);
+                bomb.style.top = `${y}px`;
+                bomb.dataset.y = y;
+
+                if (y > canvas.height) {
+                    score -= bombDamage[bomb.dataset.size];
+                    createExplosion(parseFloat(bomb.style.left), canvas.height - 30, parseFloat(bomb.style.width));
+                    updateScore();
+                    bomb.remove();
+                    bombs = bombs.filter(b => b !== bomb);
+                    if (score <= 0) {
+                        alert('Game Over!');
+                        location.reload();
+                    }
+                }
+            });
+        }
+
+        function gameLoop() {
+            updateBombs();
+            requestAnimationFrame(gameLoop);
+        }
+
+        createBomb();
+        updateScore();
+        gameLoop();
+    </script>
+</body>
+</html>
